@@ -44,6 +44,7 @@ namespace StudentGradeTracker.Repo
                         Name = role
                     };
 
+                    //add role
                     var addRole = await _roleManager.CreateAsync(newRole);
 
                     if (addRole.Succeeded)
